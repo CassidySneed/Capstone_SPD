@@ -12,8 +12,6 @@
   <link rel="stylesheet" href="https://bootswatch.com/5/minty/bootstrap.min.css">
   <!-- CUSTOM STYLE -->
   <link rel="stylesheet" href="styles.css">
-  <!-- Javascript -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- header -->
@@ -52,7 +50,30 @@
             <input type="password" class="form-control" id="exampleInputPassword1">
         </div>
         <div class="text-light text-center" style="padding-right: 1rem; padding-left: 1rem; padding-bottom:30px; padding-top:20px;">
-        <button type="button" class="btn btn-lg btn-primary" data-bs-toggle="popover" title="Yay" data-bs-trigger="hover" data-bs-content="We look forward to hearing from you">Submit</button>
+            <button type="button" id ="message" class="btn btn-lg btn-primary" data-toggle="popover"  data-content="We look forward to hearing from you">Submit</button>
         </div>
         </form>
+    
+    <footer>
+        <div class="d-flex flex-column align-items-center pt-4">
+          <div class="row  w-25">
+              <a href="index.html" class="col text-decoration-none text-center home-footer"><strong>Home</strong></a>
+              <a href="gallery.html" class="col text-decoration-none text-center home-footer"><strong>Gallery</strong></a>
+              <a href="contact.html" class="col text-decoration-none text-center home-footer"><strong>Contact</strong></a>
+          </div>
+          <p class=" pt-3 home-footer"><small>Copyright © 2022 Cassidy Sneed</small></p>
+      </div>
+      </footer>
+    <!-- SCRIPTS -->
+     <!-- Javascript -->
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+     $(function () {
+          $("#message").popover()
+        })
+     </script>
     </body> 
+</html>
+

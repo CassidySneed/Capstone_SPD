@@ -23,6 +23,7 @@
 
 }
 
-#carousel{
-    height: 30px; 
-}
+/* .carousel-item{
+    float:none; 
+    transition: 0s !important;
+} */
